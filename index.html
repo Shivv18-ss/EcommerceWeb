@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN Computers - Second Hand Laptops in Dombivli West</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>💻 VN COMPUTERS</h1>
+                <p>Quality Second Hand Laptops</p>
+            </div>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Find Your Perfect Gaming Laptop</h1>
+            <p class="hero-subtitle">🎮 Premium Second Hand Laptops at Best Prices 🎮</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search: 'gaming laptop', 'HP under 15000', 'laptops under 10000'">
+                <button onclick="searchLaptops()" class="search-btn">🔍 Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Filter -->
+    <section class="brands-section">
+        <div class="container">
+            <h2>🏆 Shop by Brand</h2>
+            <div class="brands-container">
+                <div class="brand-card" onclick="filterByBrand('HP')">
+                    <img src="images/Hp_logo.png" alt="HP">
+                    <p>HP</p>
+                </div>
+                <div class="brand-card" onclick="filterByBrand('Dell')">
+                    <img src="images/Dell_Logo.png" alt="Dell">
+                    <p>Dell</p>
+                </div>
+                <div class="brand-card" onclick="filterByBrand('Lenovo')">
+                    <img src="images/lenovo_logo.png" alt="Lenovo">
+                    <p>Lenovo</p>
+                </div>
+                <div class="brand-card" onclick="filterByBrand('Asus')">
+                    <img src="images/asus_logo.png" alt="Asus">
+                    <p>Asus</p>
+                </div>
+                <div class="brand-card" onclick="filterByBrand('Acer')">
+                    <img src="images/acer_logo.png" alt="Acer">
+                    <p>Acer</p>
+                </div>
+                <div class="brand-card" onclick="filterByBrand('Apple')">
+                    <img src="images/Mac_logo.png" alt="Apple">
+                    <p>MacBook</p>
+                </div>
+                <div class="brand-card active" onclick="filterByBrand('All')">
+                    <img src="images/Alllaptop.jpg" alt="Show All">
+                    <p>Show All</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2>🔥 Available Laptops</h2>
+            <div id="productsContainer" class="products-grid"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>About VN Computers</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>🏆 Welcome to VN Computers - Dombivli West's most trusted destination for premium quality second-hand laptops!</p>
+                    <p>✅ We specialize in Gaming Laptops, Business Laptops, and Student Laptops from top brands like HP, Dell, Lenovo, Asus, and Apple.</p>
+                    <p>💯 Every laptop is thoroughly tested and comes with warranty. We ensure 100% customer satisfaction!</p>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@VNCOMPUTERS_11" target="_blank" class="social-btn youtube">
+                            <span>📺</span> YouTube: VN COMPUTERS
+                        </a>
+                        <a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqblkwU3p4bmNsUzRkQkEyZ2lRZmRtdGxDOGgyUXxBQ3Jtc0tuZ3lzZWIzZkZsSTh4WVc5Yndpd0VqTXhyRWJqeE9RdGJFWjJ6WWZSSGhGWXQyMmRkNlNxNVlheVBGUmZzZlpzZUc5NTZoXzJDdzA0aGtncGIwNkotVDV3aVFVM2Z5cVFxbXBOS0FYUi05NDFLcmxNOA&q=https%3A%2F%2Fwww.instagram.com%2Fvncomputersdombivli%2F" target="_blank" class="social-btn instagram">
+                            <span>📷</span> Instagram: Vn computers
+                        </a>
+                        <a href="https://wa.me/919892613897" target="_blank" class="social-btn whatsapp">
+                            <span>💬</span> WhatsApp: 98926 13897
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>📍 Visit Our Store</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>VN Computers</h3>
+                    <p>📍 <strong>Address:</strong>Vn Computers,Shop no 10,Rajhans Apartment,Everest Galli Near Gulshan Juice Center Dombivli West, Maharashtra</p>
+                    <p>📞 <strong>Phone:</strong> <a href="tel:9892613897">+91 98926 13897</a></p>
+                    <p>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/919892613897" target="_blank">Click to Chat</a></p>
+                    <div class="timing">
+                        <h4>⏰ Store Timings</h4>
+                        <p>Monday - Sunday: 10:00 AM - 9:00 PM</p>
+                        <!-- <p>Sunday: 10:00 AM - 6:00 PM</p> -->
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://maps.app.goo.gl/NKcbb9BQRGT5kfBF6" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 VN Computers. All rights reserved.</p>
+            <p>Dombivli West, Maharashtra | 📞 +91 98926 13897</p>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Out of Stock Modal -->
+    <div id="outOfStockModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeOutOfStockModal()">&times;</span>
+            <div class="out-of-stock-content">
+                <h2>⚠️ Currently Out of Stock</h2>
+                <p>Sorry, we currently don't have any <strong><span id="brandName"></span></strong> laptops in our stock.</p>
+                <p>✅ Don't worry! We'll notify you as soon as they arrive.</p>
+                <a href="#" id="outOfStockWhatsApp" target="_blank" class="whatsapp-btn">
+                    <span>💬</span> Notify Me on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
